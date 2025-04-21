@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://wxk476tx550t"]
+
+[ext_resource type="Script" path="res://Stats.gd" id="1_tq64x"]
+[ext_resource type="Texture2D" uid="uid://bngssfhjkuxje" path="res://characterspng/RainRight.png" id="2_0rxe7"]
+[ext_resource type="Script" path="res://Character.gd" id="3_xv3pj"]
+[ext_resource type="Resource" uid="uid://2jj55r2m37ys" path="res://weapons/godray.tres" id="4_jrkof"]
+
+[sub_resource type="Resource" id="Resource_e3vt7"]
+script = ExtResource("1_tq64x")
+description = "Not exactly a big fan of walking...?"
+max_health = 100.0
+recovery = 1.0
+armor = 1.0
+movement_speed = 80.0
+might = 1.0
+area = 2.0
+magnet = 2.0
+growth = 1.0
+luck = 0.75
+
+[resource]
+script = ExtResource("3_xv3pj")
+title = "Boss Rain"
+icon = ExtResource("2_0rxe7")
+animation_name = "rain"
+base_stats = SubResource("Resource_e3vt7")
+starting_weapon = ExtResource("4_jrkof")

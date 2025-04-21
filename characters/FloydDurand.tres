@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="Character" load_steps=6 format=3 uid="uid://caeenkc5inhei"]
+
+[ext_resource type="Script" path="res://Stats.gd" id="1_ytvtp"]
+[ext_resource type="Texture2D" uid="uid://3dofc6bs873l" path="res://characterspng/FloydRight.png" id="2_rm5cv"]
+[ext_resource type="Script" path="res://Character.gd" id="3_otntt"]
+[ext_resource type="Resource" uid="uid://bpyeuas8mnkm0" path="res://weapons/susbook.tres" id="4_o2ypc"]
+
+[sub_resource type="Resource" id="Resource_jsiyi"]
+script = ExtResource("1_ytvtp")
+description = "Pursuiter of all wrong kind of knowledges..."
+max_health = 80.0
+recovery = 1.0
+armor = 0.0
+movement_speed = 80.0
+might = 1.0
+area = 2.0
+magnet = 2.0
+growth = 2.0
+luck = 0.5
+
+[resource]
+script = ExtResource("3_otntt")
+title = "Floyd Durand"
+icon = ExtResource("2_rm5cv")
+animation_name = "floyd"
+base_stats = SubResource("Resource_jsiyi")
+starting_weapon = ExtResource("4_o2ypc")
